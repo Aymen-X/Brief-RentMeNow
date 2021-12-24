@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Gallery.css">
+  <title>My Website</title>
+</head>
+
+  <body>
+
+    <header>
+      <nav>
+        
+        <div id="world">LOGO</div>
+        
+        <div class="blurbg">
+
+          <div id="show">show</div>
+
+        </div>
+
+        <div class="blurbg">
+            
+          <div id="hide">hide</div>
+        
+        </div>
+
+        <div class="main">
+
+          <div class="blurbg">
+            
+              <p>Home</p>
+            
+          </div>
+
+          <div class="blurbg">
+            
+              <p>Gallery</p>
+            
+          </div>
+
+          <div class="blurbg">
+            
+              <p>Transaction</p>
+            
+          </div>
+
+          <div class="blurbg">
+            
+              <p>Contact</p>
+            
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+    <main>
+      <section>
+        <div class="block">
+          <img class="car" src="Car_1.jpg" alt="luxury cars ">
+          <div class="group">
+            <div class="radius">
+              <img class="button" src="Heart (Empty).png" alt="#">
+            </div>
+            <h1>Car name</h1>
+            <h3>Model</h3>
+            <h3>Tran Type</h3>
+            <h3>Auto/Manual</h3>
+          </div>
+        </div>
+        <div class="block">
+          <img class="car" src="Car_1.jpg" alt="luxury cars ">
+          <div class="group">
+            <div class="radius">
+              <img class="button" src="Heart (Empty).png" alt="#">
+            </div>
+            <h1>Car name</h1>
+            <h3>Model</h3>
+            <h3>Tran Type</h3>
+            <h3>Auto/Manual</h3>
+          </div>
+        </div>
+        <div class="block">
+          <img class="car" src="Car_1.jpg" alt="luxury cars ">
+          <div class="group">
+            <div class="radius">
+              <img class="button" src="Heart (Empty).png" alt="#">
+            </div>
+            <h1>Car name</h1>
+            <h3>Model</h3>
+            <h3>Tran Type</h3>
+            <h3>Auto/Manual</h3>
+          </div>
+        </div>
+        <div class="block">
+          <img class="car" src="Car_1.jpg" alt="luxury cars ">
+          <div class="group">
+            <div class="radius">
+              <img class="button" src="Heart (Empty).png" alt="#">
+            </div>
+            <h1>Car name</h1>
+            <h3>Model</h3>
+            <h3>Tran Type</h3>
+            <h3>Auto/Manual</h3>
+          </div>
+        </div>
+        <div class="block">
+          <img class="car" src="Car_1.jpg" alt="luxury cars ">
+          <div class="group">
+            <div class="radius">
+              <img class="button" src="Heart (Empty).png" alt="#">
+            </div>
+            <h1>Car name</h1>
+            <h3>Model</h3>
+            <h3>Tran Type</h3>
+            <h3>Auto/Manual</h3>
+          </div>
+        </div>
+        <div class="block">
+          <img class="car" src="Car_1.jpg" alt="luxury cars ">
+          <div class="group">
+            <div class="radius">
+              <img class="button" src="Heart (Empty).png" alt="#">
+            </div>
+            <h1>Car name</h1>
+            <h3>Model</h3>
+            <h3>Tran Type</h3>
+            <h3>Auto/Manual</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      var hide = document.getElementById("hide");
+      var show = document.getElementById("show");
+      
+      hide.addEventListener("click", function() {
+        document.querySelector(".main").style.display="none";
+        show.style.display="block"
+        hide.style.display="none"
+        document.querySelector("nav").style.background="none";
+        document.querySelector("nav").style.border="none";
+      });
+
+      show.addEventListener("click", function() {
+        document.querySelector(".main").style.display="flex";
+        hide.style.display="block"
+        show.style.display="none";
+        document.querySelector("nav").style.background="rgba(0, 0, 0, 0.5)";
+      });
+
+    </SCript>
+
+
+
+
+
+
+
+
+  </body>
+</html>

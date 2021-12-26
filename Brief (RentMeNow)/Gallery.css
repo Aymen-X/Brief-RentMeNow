@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     font-family: "Eras ITC Light";
+    box-sizing: border-box;
   }
 
   body {
@@ -129,16 +130,18 @@
  
 /* ********************* */
 
-  @media screen and (max-width: 400px) {
+  @media screen and (min-width: 400px) {
     
     body {
       background-image: url("Background.jpg");
       background-repeat: no-repeat;
       background-attachment: fixed;
+      background-size: 100% 100%;
     }
 
     nav {
-      flex-direction: column;
+      width: 100%;
+      justify-content: center;
     }
     
     #world{
@@ -147,6 +150,9 @@
 
     .main{
       flex-direction: column;
+      position: relative;
+      right: 0px;
+      text-align: center;
     }
 
     section {
@@ -157,17 +163,6 @@
     .block {
       margin: 0px;
     }
-  
-    #show{
-     position: relative;
-     left: 125px;
-    display: block;
-    }
+
+ 
     
-    #hide {
-      position: relative;
-      left: 125px;
-      bottom: 40px;
-      /* display: block; */
-    }
-  }

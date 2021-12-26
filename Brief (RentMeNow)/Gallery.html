@@ -14,18 +14,6 @@
       <nav>
         
         <div id="world">LOGO</div>
-        
-        <div class="blurbg">
-
-          <div id="show">show</div>
-
-        </div>
-
-        <div class="blurbg">
-            
-          <div id="hide">hide</div>
-        
-        </div>
 
         <div class="main">
 
@@ -52,8 +40,14 @@
               <p>Contact</p>
             
           </div>
+
         </div>
+
+        
+
       </nav>
+
+     
 
     </header>
 
@@ -134,26 +128,7 @@
       </section>
     </main>
 
-    <script>
-      var hide = document.getElementById("hide");
-      var show = document.getElementById("show");
-      
-      hide.addEventListener("click", function() {
-        document.querySelector(".main").style.display="none";
-        show.style.display="block"
-        hide.style.display="none"
-        document.querySelector("nav").style.background="none";
-        document.querySelector("nav").style.border="none";
-      });
-
-      show.addEventListener("click", function() {
-        document.querySelector(".main").style.display="flex";
-        hide.style.display="block"
-        show.style.display="none";
-        document.querySelector("nav").style.background="rgba(0, 0, 0, 0.5)";
-      });
-
-    </SCript>
+  
 
 
 

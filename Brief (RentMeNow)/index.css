@@ -4,21 +4,25 @@
     font-family: "Eras ITC Light";
   }
 
+  scrollbar {
+    display: none;
+  }
+
   body {
     background-image: url("Background.jpg");
     background-size: cover;
   }
-  
-::-webkit-scrollbar {
-  display: none;
-}
 
   header {  
     position: relative;
     top:50px;
   }
+
+
   
-  nav {
+/* *******************************************************************NavBar***************************************************************** */
+  nav 
+  {
     display: flex;
     position: relative;
     padding: 5px 0px;
@@ -29,29 +33,35 @@
     color: White;
     font-size: 25px;
     align-items:center;
-   
   }
 
-  #world {  
+  #world 
+  {  
     display: flex; 
     padding: 0px 0px 0px 50px; 
     position: relative;
     left:120px;
-  
   }
-  .main {
+
+  a
+  {
+    text-decoration: none;
+    color:white;
+  }
+
+  .main 
+  {
     display: flex;
     position: relative;
     right:80px;
     gap: 20px;
-  
   }
+
   .blurbg 
   {
     padding: 20px;
   }
   
-
    .main .blurbg:hover
    {
     background-color:rgba(255, 255, 255, 0.1);
@@ -59,10 +69,13 @@
     box-shadow: 0px 0px 1px rgb(0, 0, 0);
     border-image: url(Shine.png) 120 stretch;
    }
-   
+    
+/* ****************************************************************Main************************************************************** */
+
    main { 
      position: relative;
      top:50px;
+    
    }
    
    section {
@@ -72,9 +85,6 @@
     justify-content: center;
     align-items: center;
     gap: 5px;
-   
-
-
    }
 
    #message {
@@ -87,8 +97,7 @@
     color:rgb(255, 255, 255);
     font-size: 30px;
     text-align: center;
-    width: 70%; 
-    
+    width: 70%;
    }  
 
    #border {
@@ -96,10 +105,11 @@
     border-radius: 100px;
     border-image: url(Shine.png) 120 stretch;
     border: 1px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    top: 20px;
    }
 
    #discover {
-    
     background-color:rgba(0, 0, 0, 0);
     border-radius: 100px;
     box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.295);
@@ -108,5 +118,7 @@
     color:rgb(255, 255, 255);
     font-size: 30px;
     text-align: center;
-    
    }
+
+/* ****************************************************************Main************************************************************** */
+

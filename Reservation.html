@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Reservation.css">
+  <title>My Website</title>
+</head>
+  <body>
+    <header>
+      <nav>
+        <div id="world">RentMeNow</div>
+        <div class="main">
+          <div class="blurbg">
+              <p><a href="index.html">Home</a></p>
+          </div>
+
+          <div class="blurbg">
+              <p><a href="Gallery.html">Gallery</a></p>
+          </div>
+
+          <div class="blurbg">
+              <p><a href="Reservation.html">Reservation</a></p>
+          </div>
+
+          <div class="blurbg">
+              <p><a href="Contact.html">Contact</a></p>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div id="background">
+        <section>
+          <form>
+            <label for="type">Choose the vehicule type:
+              <select id="type" name="type">
+                <option id="emptyT" value="1" selected="selected">-</option>
+                <option value="10">Moto</option>
+                <option value="12">Citadine</option>
+                <option value="14">Compact</option>
+                <option value="20">Berline</option>
+                <option value="16">Utilitaire</option>
+                <option value="900">Engine de chantier</option>
+                <option value="250">Camion</option>
+              </select>
+            </label>
+            
+
+            <label for="transmission">Choose the transmission:
+              <select id="transmission" name="transmission">
+                <option id="emptyTR" value="1" selected="selected">-</option>
+                <option id="manual" value="1">Manual</option>
+                <option id="auto" value="1.19">Automatic</option>
+              </select>
+            </label>
+          
+            <label for="fuel">Choose your fuel type:
+              <select id="fuel" name="fuel">
+                <option id="emptyF" value="1" selected="selected">-</option>
+                <option id="electric" value="1.05">Electric</option>
+                <option id="hybride" value="1.09">Hybride</option>
+                <option id="essence" value="1.14">Essence</option>
+                <option id="diesel" value="1.21">Diesel</option>
+              </select>
+            </label>
+        
+            <label for="date">Select the number of days:
+              <input type="number" id="date" name="date" min="1" value="1">
+            </label>
+          </form>
+
+          <button type="button" id="btn">Book</button>
+        
+        </section>
+        
+        <section class="result">
+          <h1>Your bookings</h1>
+          <div id="table">
+
+            <div id="heading">
+              <span class="flex type">Type</span>
+              <span class="flex transmission">Transmission</span>
+              <span class="flex fuel">Fuel</span>
+              <span class="flex days">Days</span>
+              <span class="flex total">Total</span>
+            </div>
+
+              <div id="data"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="Reservation.js"></script>
+  </body>
+</html>

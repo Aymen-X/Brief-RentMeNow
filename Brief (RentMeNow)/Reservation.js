@@ -177,7 +177,7 @@ console.log(nbDay);
 var total = 0;
 
 total+=nbDay*(parseFloat(valueT)*parseFloat(valueTR)*parseFloat(valueF));
-console.log(total);
+
 
 var Data=document.querySelector("#data");
 var Element1=document.createElement("span");
@@ -209,7 +209,7 @@ Data.append(Element4);
 
 var Data=document.querySelector("#data");
 var Element5=document.createElement("span");
-Element5.innerHTML=total;
+Element5.innerHTML=parseFloat(total).toFixed(2);
 Element5.classList.add('total');
 Element5.classList.add('flex');
 Data.append(Element5);

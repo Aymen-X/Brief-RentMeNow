@@ -32,65 +32,66 @@
     </header>
 
     <main>
-      <section>
-        <form>
-          <label for="type">Choose the vehicule type:</label>
-          <select id="type" name="type">
-            <option id="emptyT" value="1" selected="selected">-</option>
-            <option value="10">Moto</option>
-            <option value="12">Citadine</option>
-            <option value="14">Compact</option>
-            <option value="20">Berline</option>
-            <option value="16">Utilitaire</option>
-            <option value="900">Engine de chantier</option>
-            <option value="250">Camion</option>
-          </select>
-        </form>
+      <div id="background">
+        <section>
+          <form>
+            <label for="type">Choose the vehicule type:
+              <select id="type" name="type">
+                <option id="emptyT" value="1" selected="selected">-</option>
+                <option value="10">Moto</option>
+                <option value="12">Citadine</option>
+                <option value="14">Compact</option>
+                <option value="20">Berline</option>
+                <option value="16">Utilitaire</option>
+                <option value="900">Engine de chantier</option>
+                <option value="250">Camion</option>
+              </select>
+            </label>
+            
+
+            <label for="transmission">Choose the transmission:
+              <select id="transmission" name="transmission">
+                <option id="emptyTR" value="1" selected="selected">-</option>
+                <option id="manual" value="1">Manual</option>
+                <option id="auto" value="1.19">Automatic</option>
+              </select>
+            </label>
+          
+            <label for="fuel">Choose your fuel type:
+              <select id="fuel" name="fuel">
+                <option id="emptyF" value="1" selected="selected">-</option>
+                <option id="electric" value="1.05">Electric</option>
+                <option id="hybride" value="1.09">Hybride</option>
+                <option id="essence" value="1.14">Essence</option>
+                <option id="diesel" value="1.21">Diesel</option>
+              </select>
+            </label>
         
-        <form>
-          <label for="transmission">Choose the transmission:</label>
-          <select id="transmission" name="transmission">
-            <option id="emptyTR" value="1" selected="selected">-</option>
-            <option id="manual" value="1">Manual</option>
-            <option id="auto" value="1.19">Automatic</option>
-          </select>
-        </form>
+            <label for="date">Select the number of days:
+              <input type="number" id="date" name="date" min="1" value="1">
+            </label>
+          </form>
 
-        <form>
-          <label for="fuel">Choose your fuel type:</label>
-          <select id="fuel" name="fuel">
-            <option id="emptyF" value="1" selected="selected">-</option>
-            <option id="electric" value="1.05">Electric</option>
-            <option id="hybride" value="1.09">Hybride</option>
-            <option id="essence" value="1.14">Essence</option>
-            <option id="diesel" value="1.21">Diesel</option>
-          </select>
-        </form>
+          <button type="button" id="btn">Book</button>
+        
+        </section>
+        
+        <section class="result">
+          <h1>Your bookings</h1>
+          <div id="table">
 
-        <form>
-          <label for="date">Select the number of days:</label>
-          <input type="number" id="date" name="date" min="1" value="1">
-        </form>
+            <div id="heading">
+              <span class="flex type">Type</span>
+              <span class="flex transmission">Transmission</span>
+              <span class="flex fuel">Fuel</span>
+              <span class="flex days">Days</span>
+              <span class="flex total">Total</span>
+            </div>
 
-        <button type="button" id="btn">Book</button>
-      
-      </section>
-      
-      <section class="please">
-        <div id="table">
-
-          <div id="heading">
-            <span class="flex type">Type</span>
-            <span class="flex transmission">Transmission</span>
-            <span class="flex fuel">Fuel</span>
-            <span class="flex days">Days</span>
-            <span class="flex total">Total</span>
+              <div id="data"></div>
           </div>
-
-            <div id="data"></div>
-        </div>
-      </section>
-
+        </section>
+      </div>
     </main>
     <script src="Reservation.js"></script>
   </body>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contact.css">
+  <title>My Website</title>
+</head>
+  <body>
+    <header>
+        <a href="#" class="world">RentMeNow</a>
+        <div class="menuToggle" onclick="toggleMenu()"></div>
+        <ul class="navigation">
+          <li class="blurbg"><a href="index.html"  onclick="toggleMenu()">Home</a></li>
+          <li class="blurbg"><a href="gallery.html"  onclick="toggleMenu()">Gallery</a></li>
+          <li class="blurbg"><a href="reservation.html"  onclick="toggleMenu()">Reservation</a></li>
+          <li class="blurbg"><a href="contact.html"  onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </header>
+
+       <main>
+        <div class="container">
+          <h1>Connect with us</h1>
+
+          <div class="contact-box">
+            <div class="contact">
+              <h3>Send your request</h3>
+              <form>
+
+                <div class="input-row">
+                  <div class="input-group">
+                    <label>Name</label>
+                    <input type="text" placeholder="FULL NAME"> 
+                  </div>
+                  <div class="input-group">
+                    <label>Phone</label>
+                    <input type="text" placeholder="0X-XX-XX-XX-XX"> 
+                  </div>
+                </div>
+
+                <div class="input-row">
+                  <div class="input-group">
+                    <label>E-mail</label>
+                    <input type="text" placeholder="emailaddress@example.exm"> 
+                  </div>
+                  <div class="input-group">
+                    <label>Subject</label>
+                    <input type="text" placeholder="Description of the message"> 
+                  </div>
+                </div>
+                
+                <label>Message</label>
+                <textarea rows="5" placeholder="Your message"></textarea>
+
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+       </main>
+
+       <footer>
+        <div class="footer-content">
+          <ul class="socials-left">
+            <li><a href="#"><img src="youtube.png"></a></li>
+            <li><a href="#"><img src="facebook.png"></a></li>
+         </ul>
+  
+         <p>RentMeNow. © All Right Reserved 2022.</p>
+  
+         <ul class="socials-right">
+          <li><a href="#"><img src="twitter.png"></a></li>
+          <li><a href="#"><img src="instagram.png"></a></li>
+         </ul>
+       </div>
+      </footer>
+
+
+
+      <!--*****************************Responsive******************************-->
+    <script type="text/javascript">
+      function toggleMenu(){
+          const menuToggle = document.querySelector(".menuToggle");
+          const navigation = document.querySelector(".navigation");
+          menuToggle.classList.toggle("active");
+          navigation.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

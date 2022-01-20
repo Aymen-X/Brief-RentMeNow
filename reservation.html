@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reservation.css">
+  <title>My Website</title>
+</head>
+  <body>
+    <header>
+        <a href="#" class="world">RentMeNow</a>
+        <div class="menuToggle" onclick="toggleMenu()"></div>
+        <ul class="navigation">
+          <li class="blurbg"><a href="index.html"  onclick="toggleMenu()">Home</a></li>
+          <li class="blurbg"><a href="gallery.html"  onclick="toggleMenu()">Gallery</a></li>
+          <li class="blurbg"><a href="reservation.html"  onclick="toggleMenu()">Reservation</a></li>
+          <li class="blurbg"><a href="contact.html"  onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </header>
+
+    <main>
+      <div id="background">
+        <section>
+          <form>
+            <label for="type">Choose the vehicule type:
+              <select id="type" name="type">
+                <option id="emptyT" value="1" selected="selected">-</option>
+                <option value="10">Moto</option>
+                <option value="12">Citadine</option>
+                <option value="14">Compact</option>
+                <option value="20">Berline</option>
+                <option value="16">Utilitaire</option>
+                <option value="900">Engine de chantier</option>
+                <option value="250">Camion</option>
+              </select>
+            </label>
+            
+
+            <label for="transmission">Choose the transmission:
+              <select id="transmission" name="transmission">
+                <option id="emptyTR" value="1" selected="selected">-</option>
+                <option id="manual" value="1">Manual</option>
+                <option id="auto" value="1.19">Automatic</option>
+              </select>
+            </label>
+          
+            <label for="fuel">Choose your fuel type:
+              <select id="fuel" name="fuel">
+                <option id="emptyF" value="1" selected="selected">-</option>
+                <option id="electric" value="1.05">Electric</option>
+                <option id="hybride" value="1.09">Hybride</option>
+                <option id="essence" value="1.14">Essence</option>
+                <option id="diesel" value="1.21">Diesel</option>
+              </select>
+            </label>
+        
+            <label for="date">Select the number of days:
+              <input type="number" id="date" name="date" min="1" value="1">
+            </label>
+          </form>
+
+          <button type="button" id="btn">Book</button>
+        </section>
+        
+        <section class="result" id="result">
+          <h1>Your bookings</h1>
+          <div id="table">
+
+            <div id="heading">
+              <span class="flex type">Type</span>
+              <span class="flex transmission">Transmission</span>
+              <span class="flex fuel">Fuel</span>
+              <span class="flex days">Days</span>
+              <span class="flex total">Total</span>
+            </div>
+
+              <div id="data"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <ul class="socials-left">
+          <li><a href="#"><img src="youtube.png"></a></li>
+          <li><a href="#"><img src="facebook.png"></a></li>
+       </ul>
+
+       <p>RentMeNow. © All Right Reserved 2022.</p>
+
+       <ul class="socials-right">
+        <li><a href="#"><img src="twitter.png"></a></li>
+        <li><a href="#"><img src="instagram.png"></a></li>
+       </ul>
+     </div>
+    </footer>
+
+    <script src="reservation.js"></script>
+    
+    <!--*****************************Responsive******************************-->
+    
+    <script type="text/javascript">
+      function toggleMenu(){
+          const menuToggle = document.querySelector(".menuToggle");
+          const navigation = document.querySelector(".navigation");
+          menuToggle.classList.toggle("active");
+          navigation.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

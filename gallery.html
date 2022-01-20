@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Gallery.css">
+  <title>My Website</title>
+</head>
+  <body>
+    <header>
+        <a href="#" class="world">RentMeNow</a>
+        <div class="menuToggle" onclick="toggleMenu()"></div>
+        <ul class="navigation">
+          <li class="blurbg"><a href="index.html"  onclick="toggleMenu()">Home</a></li>
+          <li class="blurbg"><a href="Gallery.html"  onclick="toggleMenu()">Gallery</a></li>
+          <li class="blurbg"><a href="Reservation.html"  onclick="toggleMenu()">Reservation</a></li>
+          <li class="blurbg"><a href="Contact.html"  onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </header>
+
+    <main>
+      <section>
+        <div class="border">
+          <h1>CARS</h1>
+        </div>
+        <div class="block">
+            <img class="img" src="images/cars/car1.jpg" alt="">
+            <div class="group">
+              <div class="radius"><img class="button" src="images/heart.png" alt="#"></div>
+              <h1>Car name</h1>
+              <h3>Model</h3>
+              <h3>Tran Type</h3>
+              <h3>Auto/Manual</h3>
+            </div>
+        </div>
+
+        <div class="block">
+          <img class="img" src="images/cars/car2.jpg" alt="">
+          <div class="group">
+            <div class="radius"><img class="button" src="images/heart.png" alt="#"></div>
+            <h1>Car name</h1>
+            <h3>Model</h3>
+            <h3>Tran Type</h3>
+            <h3>Auto/Manual</h3>
+          </div>
+        </div>
+
+        <div class="block">
+          <img class="img" src="images/cars/car3.jpg" alt="">
+          <div class="group">
+            <div class="radius"><img class="button" src="images/heart.png" alt="#"></div>
+            <h1>Car name</h1>
+            <h3>Model</h3>
+            <h3>Tran Type</h3>
+            <h3>Auto/Manual</h3>
+          </div>
+        </div>
+
+        <div class="border">
+          <h1>MOTO</h1>
+        </div>
+        <div class="block">
+            <img class="img" src="images/motorcycles/m1.jpg" alt="">
+            <div class="group">
+              <div class="radius"><img class="button" src="images/heart.png" alt="#"></div>
+              <h1>Motorcycle Name</h1>
+              <h3>Model</h3>
+              <h3>Tran Type</h3>
+              <h3>Auto/Manual</h3>
+            </div>
+        </div>
+
+        <div class="block">
+          <img class="img" src="images/motorcycles/m2.jpg" alt="">
+          <div class="group">
+            <div class="radius"><img class="button" src="images/heart.png" alt="#"></div>
+            <h1>Motorcycle Name</h1>
+            <h3>Model</h3>
+            <h3>Tran Type</h3>
+            <h3>Auto/Manual</h3>
+          </div>
+        </div>
+
+        <div class="block">
+          <img class="img" src="images/motorcycles/m3.jpg" alt="">
+          <div class="group">
+            <div class="radius"><img class="button" src="images/heart.png" alt="#"></div>
+            <h1>Motorcycle Name</h1>
+            <h3>Model</h3>
+            <h3>Tran Type</h3>
+            <h3>Auto/Manual</h3>
+          </div>
+        </div>
+
+        <div class="border">
+          <h1>TRUCKS</h1>
+        </div>
+        <div class="block">
+            <img class="img" src="images/trucks/t1.jpg" alt="">
+            <div class="group">
+              <div class="radius"><img class="button" src="images/heart.png" alt="#"></div>
+              <h1>Truck Name</h1>
+              <h3>Model</h3>
+              <h3>Tran Type</h3>
+              <h3>Auto/Manual</h3>
+            </div>
+        </div>
+
+        <div class="block">
+          <img class="img" src="images/trucks/t2.jpg" alt="">
+          <div class="group">
+            <div class="radius"><img class="button" src="images/heart.png" alt="#"></div>
+            <h1>Truck Name</h1>
+            <h3>Model</h3>
+            <h3>Tran Type</h3>
+            <h3>Auto/Manual</h3>
+          </div>
+        </div>
+
+        <div class="block">
+          <img class="img" src="images/trucks/t3.jpg" alt="">
+          <div class="group">
+            <div class="radius"><img class="button" src="images/heart.png" alt="#"></div>
+            <h1>Truck Name</h1>
+            <h3>Model</h3>
+            <h3>Tran Type</h3>
+            <h3>Auto/Manual</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <ul class="socials-left">
+          <li><a href="#"><img src="images/youtube.png"></a></li>
+          <li><a href="#"><img src="images/facebook.png"></a></li>
+       </ul>
+
+       <p>RentMeNow. © All Right Reserved 2022.</p>
+
+       <ul class="socials-right">
+        <li><a href="#"><img src="images/twitter.png"></a></li>
+        <li><a href="#"><img src="images/instagram.png"></a></li>
+       </ul>
+     </div>
+    </footer>
+
+
+    <!--*****************************Responsive******************************-->
+    <script type="text/javascript">
+      function toggleMenu(){
+          const menuToggle = document.querySelector(".menuToggle");
+          const navigation = document.querySelector(".navigation");
+          menuToggle.classList.toggle("active");
+          navigation.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

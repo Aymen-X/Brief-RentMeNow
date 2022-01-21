@@ -219,3 +219,124 @@ button
   height: 40px;
 }
  
+
+/* *******************************Responsive******************************* */
+@media (max-width: 991px)
+{
+    header
+    {
+        padding: 10px 20px;
+        z-index: 1;
+    }
+
+    header .navigation
+    {
+        display: none;
+    }
+
+    header .navigation.active
+    {
+        width: 40%;
+        height: 90vh;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        background: rgba(0, 0, 0, 0.925);
+    }
+
+    header .navigation li
+    {
+        margin-left: 0;
+    }
+
+    header .navigation li a 
+    {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 1.5em;
+        font-weight: 300;
+    }
+
+    .menuToggle
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(images/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .menuToggle.active
+    {
+        background: url(images/close.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #message, #discover
+    {
+      font-size:24px;
+    }
+
+    section
+    {
+      padding: 0px;
+    }
+
+    .block
+    {
+      margin: 0 0 20px 0;
+    }
+
+    main
+    {
+      padding: 50px 0px;
+    }
+
+    .footer-content
+    {
+      padding: 0 30px;
+    }
+
+
+    .footer-content p
+    {
+      font-size: 1em;
+    }
+}
+
+@media (max-width: 350px)
+{
+    header .world
+    {
+      font-size: 1.5em;
+    }
+
+    #message, #discover
+    {
+      font-size:20px;
+    }
+
+    .footer-content
+    {
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .footer-content p
+    {
+      font-size: 1em;
+    }
+
+    
+}

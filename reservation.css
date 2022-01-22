@@ -51,11 +51,6 @@ header .navigation li a
   font-size: 1.3em;
 }
 
-header.sticky .navigation li a
-{
-    color: #111;
-}
-
 header .navigation li a:hover
 {
     color: #f56363;
@@ -68,10 +63,17 @@ header .navigation li a:hover
 
 .blurbg:hover
 {
-  background-color:rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0px 0px 1px rgb(0, 0, 0);
+  background-color:rgba(0, 0, 0, 0.3);
+  border: 1px solid;
+  box-shadow: 0px 0px 1/2px 0.5px rgb(0, 0, 0);
   border-image: url(images/shine.png) 120 stretch;
+  transition: 0.5s ease;
+}
+
+.blurbg:active
+{
+  background-color:rgba(0, 0, 0, 0.5);
+  transition: 1s ease;
 }
     
 
@@ -101,16 +103,32 @@ section
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color:rgb(255, 255, 255);
-  padding-top:20px;
+  padding: 40px 0px 60px;
   gap: 15px;
+  color:rgb(255, 255, 255);
+}
+
+section.blur
+{
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.295);
+  border-image: url(images/shine.png) 120 stretch;
+  backdrop-filter: blur(5px);
+  transition: 1s;
+}
+
+section.blur:hover
+{
+  background:rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(0px);
 }
 
 #heading
 {
   display: grid;
   grid-template-columns: repeat(5,1fr);
-  background-color: #aa3131;
+  background-color: #000000;
 }
 
 .flex
@@ -119,12 +137,18 @@ section
   flex-direction: row;
   justify-content: center;
   padding: 20px;
-  border-right: 1px solid white;
+  border-right: 0.1px solid white;
+  font-weight: 300;
+  font-size: 20px;
+  transition: 0.3s ease;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
 }
 
 #data .flex:hover
 {
-  background-color: white;
+  background:rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(0px);
 }
 
 .type
@@ -147,19 +171,14 @@ section
 
 label
 { 
-  font-size: 20px;
+  font-size: 24px;
 }
 
 form
 {
-  white-space: pre-line;
+  white-space: pre;
   display: flex;
   flex-direction: column;
-  align-items: baseline;
-  align-content: stretch;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  gap: 20px;
 }
 
 form input, select
@@ -212,8 +231,9 @@ input
 .result
 {
   opacity: 0%;
-  transition: 0.5s ;
+  transition: 0.5s;
 }
+
 /* ******************************* Footer ******************************* */
 .footer-content
 {

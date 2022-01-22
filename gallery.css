@@ -63,10 +63,17 @@ header .navigation li a:hover
 
 .blurbg:hover
 {
-  background-color:rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0px 0px 1px rgb(0, 0, 0);
+  background-color:rgba(0, 0, 0, 0.3);
+  border: 1px solid;
+  box-shadow: 0px 0px 1/2px 0.5px rgb(0, 0, 0);
   border-image: url(images/shine.png) 120 stretch;
+  transition: 0.5s ease;
+}
+
+.blurbg:active
+{
+  background-color:rgba(0, 0, 0, 0.5);
+  transition: 1s ease;
 }
     
 
